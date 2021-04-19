@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="800.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PoemsRecite.GUI.ShiReviewWindow.ShiReviewWindowController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9dcdca" height="149.0" layoutX="15.0" layoutY="80.0" stroke="#ffd1d1" strokeType="INSIDE" strokeWidth="0.0" width="471.0" />
+      <TextField fx:id="SearchText1" layoutX="206.0" layoutY="108.0" prefHeight="36.0" prefWidth="171.0" />
+      <Button fx:id="SearchButton" layoutX="399.0" layoutY="108.0" mnemonicParsing="false" onAction="#search" text="搜索" />
+      <Button fx:id="HomeButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#backToHome" prefHeight="51.0" prefWidth="60.0" text="🏠" textFill="#9dcdca">
+         <font>
+            <Font size="25.0" />
+         </font></Button>
+      <ChoiceBox fx:id="SearchClass1" layoutX="91.0" layoutY="108.0" prefHeight="36.0" prefWidth="91.0" />
+      <ChoiceBox fx:id="SearchClass2" layoutX="91.0" layoutY="168.0" prefHeight="36.0" prefWidth="91.0" />
+      <TextField fx:id="SearchText2" layoutX="206.0" layoutY="168.0" prefHeight="36.0" prefWidth="171.0" />
+      <ChoiceBox fx:id="Relationship" layoutX="27.0" layoutY="168.0" prefHeight="36.0" prefWidth="38.0" />
+      <Button fx:id="LearnNewButton" layoutX="366.0" layoutY="14.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="120.0" text="学习新诗词" />
+      <VBox layoutX="27.0" layoutY="229.0" prefHeight="500.0" prefWidth="441.0">
+         <children>
+            <VBox fx:id="poem1" prefHeight="60.0" prefWidth="471.0">
+               <children>
+                  <HBox alignment="BOTTOM_LEFT" prefHeight="20.0" prefWidth="441.0">
+                     <children>
+                        <Label fx:id="Title1" text="标题">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font></Label>
+                        <Pane prefHeight="40.0" prefWidth="25.0" />
+                        <Label fx:id="Author1" text="作者">
+                           <font>
+                              <Font size="20.0" />
+                           </font></Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="43.0" prefWidth="441.0">
+                     <children>
+                        <Label fx:id="Content1" alignment="BOTTOM_LEFT" prefHeight="40.0" prefWidth="520.0" text="正文">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Pane prefHeight="40.0" prefWidth="471.0">
+               <children>
+                  <HBox layoutX="1.0" layoutY="1.0" prefHeight="24.0" prefWidth="284.0">
+                     <children>
+                        <Label fx:id="grade1" prefHeight="24.0" prefWidth="90.0" text="熟练度" textFill="#9dcdca">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="studiedTimes1" prefHeight="24.0" prefWidth="100.0" text="学习次数" textFill="#fbb457">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                     </children>
+                  </HBox>
+               </children></Pane>
+            <VBox fx:id="poem2" prefHeight="60.0" prefWidth="471.0">
+               <children>
+                  <HBox alignment="BOTTOM_LEFT" prefHeight="22.0" prefWidth="441.0">
+                     <children>
+                        <Label fx:id="Title2" text="标题">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                        </Label>
+                        <Pane prefHeight="40.0" prefWidth="25.0" />
+                        <Label fx:id="Author2" text="作者">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="Content2" alignment="BOTTOM_LEFT" prefHeight="40.0" prefWidth="498.0" text="正文">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Pane prefHeight="40.0" prefWidth="471.0">
+               <children>
+                  <HBox layoutY="1.0" prefHeight="24.0" prefWidth="284.0">
+                     <children>
+                        <Label fx:id="grade2" prefHeight="24.0" prefWidth="90.0" text="熟练度" textFill="#9dcdca">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="studiedTimes2" prefHeight="24.0" prefWidth="100.0" text="学习次数" textFill="#fbb457">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                     </children>
+                  </HBox>
+               </children></Pane>
+            <VBox fx:id="poem3" prefHeight="60.0" prefWidth="471.0">
+               <children>
+                  <HBox alignment="BOTTOM_LEFT" prefHeight="20.0" prefWidth="441.0">
+                     <children>
+                        <Label fx:id="Title3" text="标题">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                        </Label>
+                        <Pane prefHeight="40.0" prefWidth="25.0" />
+                        <Label fx:id="Author3" text="作者">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="Content3" alignment="BOTTOM_LEFT" prefHeight="40.0" prefWidth="643.0" text="正文">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Pane prefHeight="40.0" prefWidth="471.0">
+               <children>
+                  <HBox prefHeight="25.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="grade3" prefHeight="24.0" prefWidth="90.0" text="熟练度" textFill="#9dcdca">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="studiedTimes3" prefHeight="24.0" prefWidth="100.0" text="学习次数" textFill="#fbb457">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                     </children>
+                  </HBox>
+               </children></Pane>
+            <VBox fx:id="poem4" prefHeight="60.0" prefWidth="471.0">
+               <children>
+                  <HBox alignment="BOTTOM_LEFT" prefHeight="24.0" prefWidth="441.0">
+                     <children>
+                        <Label fx:id="Title4" text="标题">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                        </Label>
+                        <Pane prefHeight="40.0" prefWidth="25.0" />
+                        <Label fx:id="Author4" text="作者">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="Content4" alignment="BOTTOM_LEFT" prefHeight="40.0" prefWidth="607.0" text="正文">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Pane prefHeight="40.0" prefWidth="471.0">
+               <children>
+                  <HBox layoutY="1.0" prefHeight="24.0" prefWidth="284.0">
+                     <children>
+                        <Label fx:id="grade4" prefHeight="24.0" prefWidth="90.0" text="熟练度" textFill="#9dcdca">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="studiedTimes4" prefHeight="24.0" prefWidth="100.0" text="学习次数" textFill="#fbb457">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                     </children>
+                  </HBox>
+               </children></Pane>
+            <VBox fx:id="poem5" prefHeight="60.0" prefWidth="471.0">
+               <children>
+                  <HBox alignment="BOTTOM_LEFT" prefHeight="24.0" prefWidth="441.0">
+                     <children>
+                        <Label fx:id="Title5" text="标题">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                        </Label>
+                        <Pane prefHeight="40.0" prefWidth="25.0" />
+                        <Label fx:id="Author5" text="作者">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="Content5" alignment="BOTTOM_LEFT" prefHeight="40.0" prefWidth="548.0" text="正文">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <HBox prefHeight="24.0" prefWidth="284.0">
+               <children>
+                  <Label fx:id="grade5" prefHeight="24.0" prefWidth="90.0" text="熟练度" textFill="#9dcdca">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="studiedTimes5" prefHeight="24.0" prefWidth="100.0" text="学习次数" textFill="#fbb457">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font></Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Button fx:id="previousPageButton" layoutX="158.0" layoutY="740.0" mnemonicParsing="false" onAction="#previousPage" text="⬅">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="nextPageButton" layoutX="292.0" layoutY="740.0" mnemonicParsing="false" onAction="#nextPage" text="➡">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="PageNumber" layoutX="230.0" layoutY="749.0" text="页码" textAlignment="CENTER">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

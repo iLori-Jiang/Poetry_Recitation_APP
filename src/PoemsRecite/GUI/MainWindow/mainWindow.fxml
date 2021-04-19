@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="800.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PoemsRecite.GUI.MainWindow.MainWindowController">
+   <children>
+      <Button fx:id="StartReciteButton" layoutX="53.0" layoutY="516.0" mnemonicParsing="false" onAction="#changeToSelectWindow" prefHeight="88.0" prefWidth="396.0" text="开始背诗叭！">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="logOutButton" layoutX="53.0" layoutY="670.0" mnemonicParsing="false" onAction="#logOut" prefHeight="44.0" prefWidth="396.0" text="退出登录">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <HBox layoutX="52.0" layoutY="75.0" prefHeight="29.0" prefWidth="380.0">
+         <children>
+            <Label fx:id="userID" alignment="BOTTOM_LEFT" textFill="#5fc0c9">
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
+            <Label alignment="BOTTOM_LEFT" text=" 冲冲冲！">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+         </children>
+      </HBox>
+      <HBox layoutX="52.0" layoutY="122.0" prefHeight="29.0" prefWidth="380.0">
+         <children>
+            <Label text="已学习 ">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Label>
+            <Label fx:id="studiedDays" textFill="#5fc0c9">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Label>
+            <Label text=" 天">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutX="52.0" layoutY="195.0" prefHeight="29.0" prefWidth="380.0">
+         <children>
+            <Label text="学习了 ">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="finishedPoems" textFill="#5fc0c9">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label text=" 首诗词">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Button fx:id="exportButton" layoutX="315.0" layoutY="612.0" mnemonicParsing="false" onAction="#exportTXT" prefHeight="48.0" prefWidth="133.0" text="导出学习数据" />
+      <Button fx:id="compareButton" layoutX="52.0" layoutY="612.0" mnemonicParsing="false" onAction="#jumpToCompareWindow" prefHeight="48.0" prefWidth="133.0" text="对比学习数据" />
+      <Button fx:id="simulateButton" layoutX="196.0" layoutY="612.0" mnemonicParsing="false" onAction="#simulateStudy" prefHeight="48.0" prefWidth="109.0" text="模拟学习" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PoemsRecite.GUI.TagModifyWindow.TagModifyWindowController">
+   <children>
+      <Button fx:id="deleteTagButton" layoutX="165.0" layoutY="141.0" mnemonicParsing="false" onAction="#deleteTag" prefHeight="36.0" prefWidth="74.0" text="删除" />
+      <Button fx:id="addTagButton" layoutX="60.0" layoutY="141.0" mnemonicParsing="false" onAction="#addTag" prefHeight="36.0" prefWidth="74.0" text="添加" />
+      <TextField fx:id="input" alignment="CENTER" layoutX="61.0" layoutY="92.0" prefHeight="36.0" prefWidth="179.0" promptText="请输入要修改的Tag" />
+      <BorderPane layoutX="50.0" layoutY="14.0" prefHeight="70.0" prefWidth="200.0">
+         <top>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="当前具有如下Tag：" textAlignment="CENTER" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </Text>
+         </top>
+         <center>
+            <Text fx:id="Tags" fill="#45c8d3" strokeType="OUTSIDE" strokeWidth="0.0" text="Tags" textAlignment="CENTER" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <BorderPane.margin>
+                  <Insets top="5.0" />
+               </BorderPane.margin>
+            </Text>
+         </center>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </BorderPane>
+   </children>
+</AnchorPane>
