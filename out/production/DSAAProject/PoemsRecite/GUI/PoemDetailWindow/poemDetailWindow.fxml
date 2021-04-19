@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="800" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PoemsRecite.GUI.PoemDetailWindow.PoemDetailWindowController">
+   <children>
+      <VBox layoutX="35.0" layoutY="105.0" prefHeight="579.0" prefWidth="430.0">
+         <children>
+            <HBox prefHeight="33.0" prefWidth="428.0">
+               <children>
+                  <Label text="《">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="title" text="标题">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Label text="》">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <AnchorPane prefHeight="11.0" prefWidth="430.0" />
+            <Label fx:id="author" prefHeight="27.0" prefWidth="423.0" text="作者" textFill="#000000cc">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Pane prefHeight="8.0" prefWidth="430.0" />
+            <ScrollPane prefHeight="497.0" prefWidth="430.0">
+               <content>
+                  <Label fx:id="content" text="内容">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+      <Button fx:id="BackButton" layoutX="24.0" layoutY="24.0" mnemonicParsing="false" onAction="#backToPoemSelectWindow" prefHeight="51.0" prefWidth="60.0" text="⬅" textFill="#9dcdca">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <HBox layoutX="35.0" layoutY="690.0" prefHeight="39.0" prefWidth="342.0" spacing="7.0">
+         <children>
+            <Text fx:id="Tag" fill="#45c8d1" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+               <font>
+                  <Font size="20.0" />
+               </font></Text>
+         </children>
+      </HBox>
+      <Text layoutX="35.0" layoutY="752.0" strokeType="OUTSIDE" strokeWidth="0.0" text="掌握程度:" wrappingWidth="226.0">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <HBox layoutX="134.0" layoutY="714.0" prefHeight="59.0" prefWidth="232.0">
+         <children>
+            <Label fx:id="star1" alignment="TOP_LEFT" prefHeight="56.0" prefWidth="40.0" text="⭐" textFill="#d4d4d4">
+               <font>
+                  <Font size="44.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="8.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="star2" alignment="TOP_LEFT" prefHeight="56.0" prefWidth="40.0" text="⭐" textFill="#d4d4d4">
+               <font>
+                  <Font size="44.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="star3" alignment="TOP_LEFT" prefHeight="56.0" prefWidth="40.0" text="⭐" textFill="#d4d4d4">
+               <font>
+                  <Font size="44.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="star4" alignment="TOP_LEFT" prefHeight="56.0" prefWidth="40.0" text="⭐" textFill="#d4d4d4">
+               <font>
+                  <Font size="44.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="star5" alignment="TOP_LEFT" prefHeight="56.0" prefWidth="40.0" text="⭐" textFill="#d4d4d4">
+               <font>
+                  <Font size="44.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <Text fill="#00000099" layoutX="24.0" layoutY="773.0" strokeType="OUTSIDE" strokeWidth="0.0" text="（5星则不再复习）" wrappingWidth="226.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Button fx:id="modifyTagButton" layoutX="386.0" layoutY="690.0" mnemonicParsing="false" onAction="#jumpToModifyTagWindow" prefHeight="33.0" prefWidth="79.0" text="修改Tag" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

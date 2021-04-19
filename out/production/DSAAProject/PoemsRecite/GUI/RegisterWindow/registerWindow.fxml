@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="800" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PoemsRecite.GUI.RegisterWindow.RegisterWindowController">
+   <children>
+      <Button fx:id="yesButton" layoutX="111.0" layoutY="430.0" mnemonicParsing="false" onAction="#changeToMainWindow" prefHeight="55.0" prefWidth="109.0" text="是" />
+      <Button fx:id="noButton" layoutX="281.0" layoutY="430.0" mnemonicParsing="false" onAction="#changeToLoginWindow" prefHeight="55.0" prefWidth="109.0" text="否" />
+      <Label layoutX="167.0" layoutY="746.0" text="李博宣  江海洋  张大蓬  周钰恒">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="166.0" layoutY="322.0" prefHeight="39.0" prefWidth="242.0" text="没有找到此用户，">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="176.0" layoutY="361.0" prefHeight="39.0" prefWidth="242.0" text="请问要创建吗？">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

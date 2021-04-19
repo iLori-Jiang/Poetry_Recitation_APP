@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PoemsRecite.GUI.ExitWindow.ExitWindowController">
+   <children>
+      <Button fx:id="finishToday" layoutX="54.0" layoutY="44.0" mnemonicParsing="false" onAction="#finishToday" prefHeight="36.0" prefWidth="193.0" text="结束今日学习" />
+      <Button fx:id="notFinishToday" layoutX="54.0" layoutY="118.0" mnemonicParsing="false" onAction="#notFinishToday" prefHeight="36.0" prefWidth="193.0" text="未结束今日学习" />
+   </children>
+</AnchorPane>
